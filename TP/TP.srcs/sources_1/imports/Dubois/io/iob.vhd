@@ -21,9 +21,8 @@ use unisim.VComponents.all;
 entity test_io is
   port (
     SORTIE 					: out std_logic;
-    CLK, nRESET    	   : in  std_logic;
-    TRIG              	: in std_logic;
-	 E_S						: inout std_logic;
+    TRIG              	    : in std_logic;
+	 E_S					: inout std_logic;
 	 ENTREE					: in  std_logic
     );
 end test_io;

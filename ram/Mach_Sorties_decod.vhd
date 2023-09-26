@@ -12,11 +12,11 @@ use ieee.std_logic_unsigned.all;
 
 entity MACH3 is
   port (
-    	CLK		: in  std_logic;
+    CLK		: in  std_logic;
 	RESET      	: in  std_logic;
-    	A		: in  std_logic;
+    A		: in  std_logic;
 	B		: in  std_logic;
-    	S1		: out  std_logic;
+    S1		: out  std_logic;
 	S2		: out  std_logic
     );
 end MACH3;

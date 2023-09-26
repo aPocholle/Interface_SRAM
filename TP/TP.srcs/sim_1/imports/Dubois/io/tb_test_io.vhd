@@ -39,8 +39,6 @@ ARCHITECTURE behavior OF tb_test_io_vhd IS
 	-- Component Declaration for the Unit Under Test (UUT)
 	COMPONENT test_io
 	PORT(
-		CLK : IN std_logic;
-		nRESET : IN std_logic;
 		TRIG : IN std_logic;
 		ENTREE : IN std_logic;    
 		E_S : INOUT std_logic;      
@@ -65,8 +63,6 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
 	uut: test_io PORT MAP(
 		SORTIE => SORTIE,
-		CLK => CLK,
-		nRESET => nRESET,
 		TRIG => TRIG,
 		E_S => E_S,
 		ENTREE => ENTREE
