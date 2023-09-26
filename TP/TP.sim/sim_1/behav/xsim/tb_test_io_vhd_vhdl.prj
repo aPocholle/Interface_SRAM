@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TP.srcs/sources_1/imports/Dubois/io/iob.vhd" \
+"../../../../TP.srcs/sim_1/imports/Dubois/io/tb_test_io.vhd" \
+
+# Do not sort compile order
+nosort
