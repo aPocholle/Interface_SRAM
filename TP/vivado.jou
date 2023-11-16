@@ -1,59 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
-# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Sep 26 08:08:38 2023
-# Process ID: 3952
-# Current directory: C:/Users/ap576391/Documents/Dubois/TP
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8880 C:\Users\ap576391\Documents\Dubois\TP\TP.xpr
-# Log file: C:/Users/ap576391/Documents/Dubois/TP/vivado.log
-# Journal file: C:/Users/ap576391/Documents/Dubois/TP\vivado.jou
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Oct 26 10:38:05 2023
+# Process ID: 7584
+# Current directory: F:/vivado_proj/Interface_SRAM/TP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1544 F:\vivado_proj\Interface_SRAM\TP\TP.xpr
+# Log file: F:/vivado_proj/Interface_SRAM/TP/vivado.log
+# Journal file: F:/vivado_proj/Interface_SRAM/TP\vivado.jou
+# Running On: DESKTOP-Q8QIOJU, OS: Windows, CPU Frequency: 3592 MHz, CPU Physical cores: 4, Host memory: 34263 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/ap576391/Documents/Dubois/TP/TP.xpr
-update_compile_order -fileset sources_1
-launch_simulation
-source tb_test_io_vhd.tcl
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_test_sram [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-close_sim
-launch_simulation
-source tb_test_sram.tcl
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_test_io_vhd [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-close_sim
-launch_simulation
-source tb_test_io_vhd.tcl
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_test_sram [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-close_sim
-launch_simulation
-source tb_test_sram.tcl
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_test_io_vhd [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-close_sim
-launch_simulation
-source tb_test_io_vhd.tcl
-close_sim

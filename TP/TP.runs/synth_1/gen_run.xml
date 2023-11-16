@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1698324083">
+  <File Type="PA-TCL" Name="Interface.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Interface_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Interface_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Interface.vds"/>
+  <File Type="RDS-UTIL" Name="Interface_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Interface_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Interface.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Interface_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Interface_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Dubois/ram/mt55l512y36f.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ram/mt55l512y36f.vhd"/>
+        <Attr Name="ImportTime" Val="1695104575"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Interface.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Dubois/io/iob.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../io/iob.vhd"/>
+        <Attr Name="ImportTime" Val="1695104628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Interface"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,69 @@
+
+*** Running vivado
+    with args -log Interface.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Interface.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Interface.tcl -notrace
+Command: synth_design -top Interface -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5092 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 699.891 ; gain = 235.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Interface' [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/new/Interface.vhd:65]
+	Parameter addr_bits bound to: 19 - type: integer 
+	Parameter data_bits bound to: 36 - type: integer 
+	Parameter tKHKH bound to: 64'b0000000000000000000000000000000000000000100110001001011010000000 
+	Parameter tKHKL bound to: 64'b0000000000000000000000000000000000000000001001100010010110100000 
+	Parameter tKLKH bound to: 64'b0000000000000000000000000000000000000000001001100010010110100000 
+	Parameter tKHQV bound to: 64'b0000000000000000000000000000000000000000010011000100101101000000 
+	Parameter tAVKH bound to: 64'b0000000000000000000000000000000000000000000111101000010010000000 
+	Parameter tEVKH bound to: 64'b0000000000000000000000000000000000000000000111101000010010000000 
+	Parameter tCVKH bound to: 64'b0000000000000000000000000000000000000000000111101000010010000000 
+	Parameter tDVKH bound to: 64'b0000000000000000000000000000000000000000000111101000010010000000 
+	Parameter tKHAX bound to: 64'b0000000000000000000000000000000000000000000001111010000100100000 
+	Parameter tKHEX bound to: 64'b0000000000000000000000000000000000000000000001111010000100100000 
+	Parameter tKHCX bound to: 64'b0000000000000000000000000000000000000000000001111010000100100000 
+	Parameter tKHDX bound to: 64'b0000000000000000000000000000000000000000000001111010000100100000 
+INFO: [Synth 8-3491] module 'mt55l512y36f' declared at 'F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/imports/Dubois/ram/mt55l512y36f.vhd:47' bound to instance 'SRAM1' of component 'mt55l512y36f' [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/new/Interface.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'mt55l512y36f' [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/imports/Dubois/ram/mt55l512y36f.vhd:89]
+	Parameter addr_bits bound to: 19 - type: integer 
+	Parameter data_bits bound to: 36 - type: integer 
+	Parameter tKHKH bound to: 64'b0000000000000000000000000000000000000000100110001001011010000000 
+	Parameter tKHKL bound to: 64'b0000000000000000000000000000000000000000001001100010010110100000 
+	Parameter tKLKH bound to: 64'b0000000000000000000000000000000000000000001001100010010110100000 
+	Parameter tKHQV bound to: 64'b0000000000000000000000000000000000000000010011000100101101000000 
+	Parameter tAVKH bound to: 64'b0000000000000000000000000000000000000000000111101000010010000000 
+	Parameter tEVKH bound to: 64'b0000000000000000000000000000000000000000000111101000010010000000 
+	Parameter tCVKH bound to: 64'b0000000000000000000000000000000000000000000111101000010010000000 
+	Parameter tDVKH bound to: 64'b0000000000000000000000000000000000000000000111101000010010000000 
+	Parameter tKHAX bound to: 64'b0000000000000000000000000000000000000000000001111010000100100000 
+	Parameter tKHEX bound to: 64'b0000000000000000000000000000000000000000000001111010000100100000 
+	Parameter tKHCX bound to: 64'b0000000000000000000000000000000000000000000001111010000100100000 
+	Parameter tKHDX bound to: 64'b0000000000000000000000000000000000000000000001111010000100100000 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/imports/Dubois/ram/mt55l512y36f.vhd:124]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/imports/Dubois/ram/mt55l512y36f.vhd:208]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable function call [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/imports/Dubois/ram/mt55l512y36f.vhd:209]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable function call [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/imports/Dubois/ram/mt55l512y36f.vhd:217]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/imports/Dubois/ram/mt55l512y36f.vhd:231]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/imports/Dubois/ram/mt55l512y36f.vhd:275]
+ERROR: [Synth 8-27] unsynthesizable attribute not supported [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/imports/Dubois/ram/mt55l512y36f.vhd:276]
+ERROR: [Synth 8-285] failed synthesizing module 'mt55l512y36f' [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/imports/Dubois/ram/mt55l512y36f.vhd:89]
+ERROR: [Synth 8-285] failed synthesizing module 'Interface' [F:/vivado_proj/Interface_SRAM/TP/TP.srcs/sources_1/new/Interface.vhd:65]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 772.523 ; gain = 308.254
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+5 Infos, 6 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 26 14:41:37 2023...

@@ -129,7 +129,7 @@ BEGIN
 	wait for 1*(TCLKL+TCLKH);
 	SA 		<= "000"&x"0001";
 	nCKE 		<= '0';
-   nRW		<= '0';
+    nRW		<= '0';
 	wait for 1*(TCLKL+TCLKH);
 	SA 		<= "000"&x"0002";
 	DQ   <= (others =>'1');

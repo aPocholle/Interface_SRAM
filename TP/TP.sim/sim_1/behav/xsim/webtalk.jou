@@ -2,11 +2,11 @@
 # Webtalk v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Sep 26 08:18:30 2023
-# Process ID: 14252
-# Current directory: C:/Users/ap576391/Documents/Dubois/TP/TP.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/ap576391/Documents/Dubois/TP/TP.sim/sim_1/behav/xsim/xsim.dir/tb_test_io_vhd_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/ap576391/Documents/Dubois/TP/TP.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/ap576391/Documents/Dubois/TP/TP.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Thu Nov 16 14:58:32 2023
+# Process ID: 3956
+# Current directory: F:/vivado_proj/Interface_SRAM/TP/TP.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/vivado_proj/Interface_SRAM/TP/TP.sim/sim_1/behav/xsim/xsim.dir/Interface_tb2_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/vivado_proj/Interface_SRAM/TP/TP.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/vivado_proj/Interface_SRAM/TP/TP.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/ap576391/Documents/Dubois/TP/TP.sim/sim_1/behav/xsim/xsim.dir/tb_test_io_vhd_behav/webtalk/xsim_webtalk.tcl -notrace
+source F:/vivado_proj/Interface_SRAM/TP/TP.sim/sim_1/behav/xsim/xsim.dir/Interface_tb2_behav/webtalk/xsim_webtalk.tcl -notrace

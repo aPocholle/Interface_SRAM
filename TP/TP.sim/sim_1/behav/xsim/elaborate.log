@@ -1,6 +1,6 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto f5a6a3f4415841998c32b7c265604f68 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_test_io_vhd_behav xil_defaultlib.tb_test_io_vhd -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto f5a6a3f4415841998c32b7c265604f68 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Interface_tb2_behav xil_defaultlib.Interface_tb2 -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -21,5 +21,8 @@ Compiling architecture obuft_v of entity unisim.OBUFT [\OBUFT(drive=16,slew="FAS
 Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
 Compiling architecture iobuf_f_16_v of entity unisim.IOBUF_F_16 [iobuf_f_16_default]
 Compiling architecture arch_test_io of entity xil_defaultlib.test_io [test_io_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_test_io_vhd
-Built simulation snapshot tb_test_io_vhd_behav
+Compiling architecture behavioral of entity xil_defaultlib.Bascule_D [\Bascule_D(width=36)\]
+Compiling architecture behave of entity xil_defaultlib.mt55l512y36f [mt55l512y36f_default]
+Compiling architecture interface_arch of entity xil_defaultlib.Interface [interface_default]
+Compiling architecture interface_tb2_arch of entity xil_defaultlib.interface_tb2
+Built simulation snapshot Interface_tb2_behav
