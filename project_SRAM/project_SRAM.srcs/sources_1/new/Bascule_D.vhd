@@ -48,7 +48,7 @@ architecture Behavioral of Bascule_D is
 begin
     process(CLK)
     begin
-        if rising_edge(CLK) then
+        if falling_edge(CLK) then
             internalQ <= D;
         end if;
     end process;

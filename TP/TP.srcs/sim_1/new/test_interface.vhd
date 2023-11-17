@@ -11,21 +11,7 @@ architecture Interface_tb_arch of Interface_tb is
         generic (
           -- Constant parameters
           addr_bits : integer := 19;
-          data_bits : integer := 36;
-    
-          -- Timing parameters for -10 (100 Mhz)
-          tKHKH : time := 10.0 ns;
-          tKHKL : time := 2.5 ns;
-          tKLKH : time := 2.5 ns;
-          tKHQV : time := 5.0 ns;
-          tAVKH : time := 2.0 ns;
-          tEVKH : time := 2.0 ns;
-          tCVKH : time := 2.0 ns;
-          tDVKH : time := 2.0 ns;
-          tKHAX : time := 0.5 ns;
-          tKHEX : time := 0.5 ns;
-          tKHCX : time := 0.5 ns;
-          tKHDX : time := 0.5 ns
+          data_bits : integer := 36
           );
           
         Port ( 
@@ -80,7 +66,8 @@ begin
     -- Réinitialisation de l'interface à tester
     process
     begin
-        wait for 3*(TCLKL+TCLKH);
+        wait for 1*(TCLKL+TCLKH);
+        wait until clk = '0'; -- On attend que la clock soit à 0.
         rst <= '0';
         wait;
     end process;
@@ -92,6 +79,20 @@ begin
     begin
         wait until rst = '0';
         
+        -- INITIALISATION SRAM ET IO ---------------------   
+                                      
+        user_address <= "000"&x"0000";        
+        -- Activer l'écriture                 
+        write <= '1';                         
+                                              
+        -- Écrire les données dans l'interface
+        user_data_in <= x"000000000";         
+                                              
+        -- Attendre que les données soient écrites
+        wait for nClk*(TCLKL+TCLKH);             
+                                             
+        -- Désactiver l'écriture              
+        write <= '0';   
         
         -- ECRITURE 1 ---------------------   
                                       
@@ -102,7 +103,7 @@ begin
         -- Écrire les données dans l'interface
         user_data_in <= x"111111111";         
                                               
-        -- Attendre que les données soient écr
+        -- Attendre que les données soient écrites
         wait for nClk*(TCLKL+TCLKH);             
                                              
         -- Désactiver l'écriture              
@@ -162,6 +163,7 @@ begin
 
         -- Écrire les données dans l'interface
         user_data_in <= x"333333333";
+        
         -- Attendre que les données soient écrites
         wait for nClk*(TCLKL+TCLKH);
         
@@ -186,25 +188,11 @@ begin
         -- Désactiver l'écriture
         write <= '0';
         
-
-        
-        -- LECTURE 3 ----------------------
-        
-        user_address <= "000"&x"0003";
-         -- Activer la lecture
-        read <= '1';
-
-        -- Attendre que les données soient disponibles
-        wait for nClk*(TCLKL+TCLKH);
-
-        -- Désactiver la lecture
-        read <= '0';
-        
-        
         
         -- LECTURE 4 ----------------------
         
         user_address <= "000"&x"0004";
+        
          -- Activer la lecture
         read <= '1';
 
@@ -218,8 +206,23 @@ begin
         read <= '0';
         
         
+        -- LECTURE 3 ----------------------
         
+        user_address <= "000"&x"0003";
+        
+         -- Activer la lecture
+        read <= '1';
+
+        -- Attendre que les données soient disponibles
+        wait for nClk*(TCLKL+TCLKH);
+
+        -- Désactiver la lecture
+        read <= '0';
+        
+        
+        -- On met des 0 pour delimité la fin de la simulation
         user_data_in <= (others =>'0');
+        
         wait;
     end process;
     

@@ -11,37 +11,29 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="525001fs"></ZoomEndTime>
-      <Cursor1Time time="1000000fs"></Cursor1Time>
+      <ZoomEndTime time="527501fs"></ZoomEndTime>
+      <Cursor1Time time="337000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="157"></NameColumnWidth>
-      <ValueColumnWidth column_width="158"></ValueColumnWidth>
+      <NameColumnWidth column_width="160"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="6" />
    <wvobject fp_name="/Interface_tb2/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/Interface_tb2/rst" type="logic">
-      <obj_property name="ElementShortName">rst</obj_property>
-      <obj_property name="ObjectShortName">rst</obj_property>
+   <wvobject fp_name="/Interface_tb2/user_data_in" type="array">
+      <obj_property name="ElementShortName">user_data_in[35:0]</obj_property>
+      <obj_property name="ObjectShortName">user_data_in[35:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/User_Data_In" type="array">
-      <obj_property name="ElementShortName">User_Data_In[35:0]</obj_property>
-      <obj_property name="ObjectShortName">User_Data_In[35:0]</obj_property>
+   <wvobject fp_name="/Interface_tb2/user_data_out" type="array">
+      <obj_property name="ElementShortName">user_data_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">user_data_out[35:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/User_Data_Out" type="array">
-      <obj_property name="ElementShortName">User_Data_Out[35:0]</obj_property>
-      <obj_property name="ObjectShortName">User_Data_Out[35:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/User_Address" type="array">
-      <obj_property name="ElementShortName">User_Address[18:0]</obj_property>
-      <obj_property name="ObjectShortName">User_Address[18:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/SRAM1/Dq" type="array">
-      <obj_property name="ElementShortName">Dq[35:0]</obj_property>
-      <obj_property name="ObjectShortName">Dq[35:0]</obj_property>
+   <wvobject fp_name="/Interface_tb2/user_address" type="array">
+      <obj_property name="ElementShortName">user_address[18:0]</obj_property>
+      <obj_property name="ObjectShortName">user_address[18:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/Interface_tb2/read" type="logic">
       <obj_property name="ElementShortName">read</obj_property>
@@ -50,37 +42,5 @@
    <wvobject fp_name="/Interface_tb2/write" type="logic">
       <obj_property name="ElementShortName">write</obj_property>
       <obj_property name="ObjectShortName">write</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/nRW" type="logic">
-      <obj_property name="ElementShortName">nRW</obj_property>
-      <obj_property name="ObjectShortName">nRW</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/nCE" type="logic">
-      <obj_property name="ElementShortName">nCE</obj_property>
-      <obj_property name="ObjectShortName">nCE</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/S_IO" type="array">
-      <obj_property name="ElementShortName">S_IO[35:0]</obj_property>
-      <obj_property name="ObjectShortName">S_IO[35:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/data_out_D" type="array">
-      <obj_property name="ElementShortName">data_out_D[35:0]</obj_property>
-      <obj_property name="ObjectShortName">data_out_D[35:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/E_IO" type="array">
-      <obj_property name="ElementShortName">E_IO[35:0]</obj_property>
-      <obj_property name="ObjectShortName">E_IO[35:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/ES_IO" type="array">
-      <obj_property name="ElementShortName">ES_IO[35:0]</obj_property>
-      <obj_property name="ObjectShortName">ES_IO[35:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/T_IO" type="logic">
-      <obj_property name="ElementShortName">T_IO</obj_property>
-      <obj_property name="ObjectShortName">T_IO</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Interface_tb2/DUT/T_IO_D" type="logic">
-      <obj_property name="ElementShortName">T_IO_D</obj_property>
-      <obj_property name="ObjectShortName">T_IO_D</obj_property>
    </wvobject>
 </wave_config>
